@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AR Sphere Exhibition", "Assembly-CSharp-firstpass.csproj", "{5692495A-3FC0-72A4-3007-3EBDB8252063}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AR Sphere Exhibition", "Assembly-CSharp.csproj", "{D5925D95-FB0A-CDBD-87B8-7E7562568BA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AR Sphere Exhibition", "Assembly-CSharp-Editor-firstpass.csproj", "{39231AAE-62E9-03F0-19ED-1FEF1F8B4633}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AR Sphere Exhibition", "Assembly-CSharp-Editor.csproj", "{215CE29F-5C48-2DD6-CADD-A55667608B90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5692495A-3FC0-72A4-3007-3EBDB8252063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5692495A-3FC0-72A4-3007-3EBDB8252063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5692495A-3FC0-72A4-3007-3EBDB8252063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5692495A-3FC0-72A4-3007-3EBDB8252063}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5925D95-FB0A-CDBD-87B8-7E7562568BA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5925D95-FB0A-CDBD-87B8-7E7562568BA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5925D95-FB0A-CDBD-87B8-7E7562568BA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5925D95-FB0A-CDBD-87B8-7E7562568BA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39231AAE-62E9-03F0-19ED-1FEF1F8B4633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39231AAE-62E9-03F0-19ED-1FEF1F8B4633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39231AAE-62E9-03F0-19ED-1FEF1F8B4633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39231AAE-62E9-03F0-19ED-1FEF1F8B4633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{215CE29F-5C48-2DD6-CADD-A55667608B90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{215CE29F-5C48-2DD6-CADD-A55667608B90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{215CE29F-5C48-2DD6-CADD-A55667608B90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{215CE29F-5C48-2DD6-CADD-A55667608B90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
