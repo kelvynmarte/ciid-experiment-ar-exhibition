@@ -706,7 +706,7 @@ Prefab:
     - target: {fileID: 11491122, guid: 455a8082e44b74539a2ffe87d0226970, type: 2}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1490200568}
+      objectReference: {fileID: 1240826633}
     - target: {fileID: 11491122, guid: 455a8082e44b74539a2ffe87d0226970, type: 2}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Select
@@ -725,7 +725,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11491122, guid: 455a8082e44b74539a2ffe87d0226970, type: 2}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Cyborg Ghost
+      value: Scenes/03 Audio Jam
       objectReference: {fileID: 0}
     - target: {fileID: 495170, guid: 455a8082e44b74539a2ffe87d0226970, type: 2}
       propertyPath: m_LocalScale.y
@@ -955,7 +955,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebc1e15da6810472aa3c0b576bb9b464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: {fileID: 0}
 --- !u!4 &1240826634
 Transform:
   m_ObjectHideFlags: 0

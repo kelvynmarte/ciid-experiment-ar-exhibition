@@ -23,13 +23,14 @@ public class SceneLoader : MonoBehaviour {
 		}
 		if (LoadMenu && Input.touchCount == 0) {
 			LoadMenu = false;
-			SceneManager.LoadScene ("Scenes/Menu");
+			SceneManager.LoadScene ("Scenes/00 Menu");
 		}
 	}
 
 	public void Select (string sceneName)
 	{
 		Debug.Log ("Load " + sceneName);
+		iOSHapticFeedback.Instance.Trigger((iOSHapticFeedback.iOSFeedbackType)2);
 		SceneManager.LoadScene (sceneName);
 	}
 
@@ -39,7 +40,7 @@ public class SceneLoader : MonoBehaviour {
 		{
 			Debug.Log ("Load Menu");
 			iOSHapticFeedback.Instance.Trigger((iOSHapticFeedback.iOSFeedbackType)0);
-			SceneManager.LoadScene ("Scenes/Menu");
+			SceneManager.LoadScene ("Scenes/00 Menu");
 		}
 	}
 
