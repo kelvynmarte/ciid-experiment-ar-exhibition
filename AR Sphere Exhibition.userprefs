@@ -2,13 +2,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/RangeHapticFeedback.cs">
     <Files>
+      <File FileName="Assets/RangeHapticFeedback.cs" Line="44" Column="27" />
       <File FileName="Assets/iOSHapticFeedback/Scripts/iOSHapticFeedback.cs" Line="1" Column="1" />
       <File FileName="Assets/SoundSphereControl.cs" Line="12" Column="24" />
-      <File FileName="Assets/Standard Assets/Characters/ThirdPersonCharacter/ThirdPersonCharacterGuidelines.txt" Line="1" Column="1" />
-      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/RigidbodyFirstPersonController.cs" Line="1" Column="1" />
-      <File FileName="Assets/iOSHapticFeedback/Scripts/iOSHapticFeedbackAdvanced.cs" Line="1" Column="1" />
-      <File FileName="Assets/iOSHapticFeedback/Scripts/iOSHapticFeedbackExample.cs" Line="11" Column="35" />
-      <File FileName="Assets/RangeHapticFeedback.cs" Line="15" Column="18" />
+      <File FileName="Assets/LoadMovieFeedbackControl.cs" Line="32" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

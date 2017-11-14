@@ -41,7 +41,7 @@ public class RangeHapticFeedback : MonoBehaviour {
 			}
 
 
-		}else if(distance > 1.22 && IsInCloseRange == true){
+		}else if(distance > 1.21 && IsInCloseRange == true){
 			IsInCloseRange = false;
 			iOSHapticFeedback.Instance.Trigger((iOSHapticFeedback.iOSFeedbackType)2);
 			rend.sharedMaterial.SetColor ("_EmissionColor", Color.black);
@@ -52,16 +52,16 @@ public class RangeHapticFeedback : MonoBehaviour {
 				audioSource.Play ();
 			}
 		}
-		videoPlayer.frame = 20;
+		// videoPlayer.frame = 20;
 		if (distance < 2) {
-			print ("very close range");
+			// print ("very close range");
 			//rend.sharedMaterial.SetColor ("_EmissionColor", Color.cyan);
 
-			rend.sharedMaterial.SetColor ("_EmissionColor", new Color ((2.0f/distance)*0.4f,(2.0f/distance)*0.4f,(2.0f/distance)*0.4f));
+			// rend.sharedMaterial.SetColor ("_EmissionColor", new Color ((2.0f/distance)*0.4f,(2.0f/distance)*0.4f,(2.0f/distance)*0.4f));
 			// rend.sharedMaterial.SetColor ("_EmissionColor", new Color ((1.5f-0.5f)*255.0f,(1.5f-0.5f)*255.0f,(1.5f-0.5f)*255.0f));
 
 		} else if(distance > 1.1f) {
-			rend.sharedMaterial.SetColor ("_EmissionColor", Color.black);
-		}
+			// rend.sharedMaterial.SetColor ("_EmissionColor", Color.black);
+		} 
 	}
 }

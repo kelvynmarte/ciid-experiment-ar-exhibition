@@ -29,23 +29,26 @@ public class LoadMovieFeedbackControl : MonoBehaviour {
 			float distance = Vector3.Distance(frame.transform.position, player.transform.position);
 			nearestFrameDistance = Mathf.Min (nearestFrameDistance, distance);
 		}
-		Debug.Log (nearestFrameDistance);
-		if (nearestFrameDistance < farDistance) {
-			float progress = (nearestFrameDistance - nearDistance) / (farDistance - nearDistance);
+		if (nearestFrameDistance < nearDistance) {
+			slider1.value = 0.0f;
+			slider2.value = 0.0f;
+			slider3.value = 0.0f;
+			slider4.value = 0.0f;
+		}else if (nearestFrameDistance < farDistance) {
+			float progress = 1.0f - ((nearestFrameDistance - nearDistance) / (farDistance - nearDistance));
 			float progressSlider1 = Mathf.Min (progress, 0.32f) / 0.32f;
-			slider1.value = progressSlider1;
+			slider1.value = Mathf.Min(progressSlider1, 1.0f);
 			float progressSlider2 = Mathf.Min (Mathf.Max(progress, 0.32f)-0.32f, 0.18f) / 0.18f;
-			slider2.value = progressSlider2;
+			slider2.value = Mathf.Min(progressSlider2, 1.0f);
 			float progressSlider3 = Mathf.Min (Mathf.Max(progress, 0.50f)-0.50f, 0.32f) / 0.32f;
-			slider3.value = progressSlider3;
+			slider3.value = Mathf.Min(progressSlider3, 1.0f);
 			float progressSlider4 = Mathf.Min (Mathf.Max(progress, 0.82f)-0.82f, 0.18f) / 0.18f;
-			slider4.value = progressSlider4;
+			slider4.value = Mathf.Min(progressSlider4, 1.0f);
 		} else {
 			slider1.value = 0.0f;
 			slider2.value = 0.0f;
 			slider3.value = 0.0f;
 			slider4.value = 0.0f;
 		}
-
 	}
 }
