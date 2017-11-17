@@ -19,6 +19,9 @@ public class Bird : MonoBehaviour {
 		this.uuid = uuid;
 		this.name = name;
 		this.captured = captured;
+	}
 
+	public string ToString(){
+		return this.uuid + " " + this.name + " " + this.captured;
 	}
 }

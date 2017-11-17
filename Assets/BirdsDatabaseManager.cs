@@ -7,6 +7,13 @@ using Firebase.Unity.Editor;
 
 
 public class BirdsDatabaseManager : MonoBehaviour {
+
+	Dictionary<string, Bird> allBirds = new Dictionary<string, Bird>();
+
+	Dictionary<string, GameObject> freeBirdsIntances = new Dictionary<string, GameObject>();
+
+	public Transform birdPrefab;
+
 	DatabaseReference reference;
 	// Use this for initialization
 	void Start () {
@@ -20,7 +27,11 @@ public class BirdsDatabaseManager : MonoBehaviour {
 			.GetReference("birds")
 			.ChildChanged += HandleChildChanged;
 
+		FirebaseDatabase.DefaultInstance
+			.GetReference("birds")
+			.ChildAdded += HandleChildAdded;
 
+		/*
 		Bird newBird = new Bird ("Seagul");
 
 		string json = JsonUtility.ToJson(newBird);
@@ -51,7 +62,7 @@ public class BirdsDatabaseManager : MonoBehaviour {
 					Debug.Log("Loaded data");
 					Debug.Log(snapshot.GetRawJsonValue());
 				}
-			});
+			});*/
 	}
 	
 	// Update is called once per frame
@@ -66,14 +77,37 @@ public class BirdsDatabaseManager : MonoBehaviour {
 		}
 		// Do something with the data in args.Snapshot
 		Debug.Log(args.Snapshot.GetRawJsonValue());
+
+		Bird changedBird = new Bird (args.Snapshot.Child("uuid").Value.ToString(), args.Snapshot.Child("name").Value.ToString(), (bool) args.Snapshot.Child("captured").Value);
+
+		processBirdChanged (changedBird);
 	}
 
-	void HandleValueChanged(object sender, ValueChangedEventArgs args) {
+	void HandleChildAdded(object sender, ChildChangedEventArgs args) {
 		if (args.DatabaseError != null) {
 			Debug.LogError(args.DatabaseError.Message);
 			return;
 		}
 		// Do something with the data in args.Snapshot
-		Debug.Log(args.Snapshot.GetRawJsonValue());
+		Debug.Log("Child added");
+
+		Bird newBird = new Bird (args.Snapshot.Child("uuid").Value.ToString(), args.Snapshot.Child("name").Value.ToString(), (bool) args.Snapshot.Child("captured").Value);
+
+		processBirdChanged (newBird);
+
+
+	}
+
+	void processBirdChanged(Bird changedBird){
+
+		Debug.Log (changedBird.ToString ());
+		allBirds [changedBird.uuid] = changedBird;
+		if (changedBird.captured == false && freeBirdsIntances.ContainsKey(changedBird.uuid) == false) { // new
+			GameObject instance = Instantiate(birdPrefab, new Vector3(2.0F, 0, 0), Quaternion.identity).gameObject;
+			freeBirdsIntances.Add (changedBird.uuid, instance);
+		}else if (changedBird.captured == true && freeBirdsIntances.ContainsKey(changedBird.uuid) == true){ // remove instance
+			Destroy (freeBirdsIntances[changedBird.uuid]);
+			freeBirdsIntances.Remove(changedBird.uuid);
+		}
 	}
 }

@@ -6,7 +6,11 @@ public class BirdController : MonoBehaviour {
 
 
 	// Use this for initialization
-	Bird bird;
+	Bird bird
+	{
+		get { return bird; }
+		set { bird = value; }
+	}
 	GameObject player;
 	AudioSource audioSource = null;
 
@@ -23,4 +27,6 @@ public class BirdController : MonoBehaviour {
 			audioSource.Stop ();
 		}
 	}
+
+
 }
