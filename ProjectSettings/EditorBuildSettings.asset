@@ -33,13 +33,13 @@ EditorBuildSettings:
     path: Assets/iOSHapticFeedback/Scenes/iOSHapticFeedbackExampleScene.unity
     guid: 416084cd217d04eb087adaf4b7da578b
   - enabled: 0
-    path: Assets/Scenes/AR CIID Habour Scene.unity
+    path: 
     guid: 4f55684058d4b4709b20264859f5a294
   - enabled: 0
     path: Assets/Scenes/Parking/Superkilen Frames.unity
     guid: bf1a496cc5358421089b40f2b1f98ca2
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
+    path: Assets/Scenes/00 Menu.unity
     guid: cb6bbdb94a46c4a88bec8aef78b77070
   - enabled: 1
     path: Assets/Scenes/01 Harbour.unity
@@ -50,3 +50,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/03 Audio Jam.unity
     guid: 03659548d3f1840de9ed36ba7ec48ca7
+  - enabled: 1
+    path: Assets/Scenes/04 Audio Hopscotch.unity
+    guid: 81aaedff40e364952b8669e2b557f2c9

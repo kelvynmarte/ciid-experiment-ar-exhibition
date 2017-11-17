@@ -21,6 +21,7 @@ public class SceneLoader : MonoBehaviour {
 				iOSHapticFeedback.Instance.Trigger((iOSHapticFeedback.iOSFeedbackType)2);
 			}
 		}
+
 		if (LoadMenu && Input.touchCount == 0) {
 			LoadMenu = false;
 			SceneManager.LoadScene ("Scenes/00 Menu");

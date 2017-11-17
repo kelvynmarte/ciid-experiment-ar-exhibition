@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AudioHopscotchPlayer.cs" />
      <Compile Include="Assets\AudioJamPlayer.cs" />
      <Compile Include="Assets\AudioJamTrigger.cs" />
      <Compile Include="Assets\LoadMovieFeedbackControl.cs" />

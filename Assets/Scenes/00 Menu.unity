@@ -1455,7 +1455,7 @@ Prefab:
     - target: {fileID: 11491122, guid: 455a8082e44b74539a2ffe87d0226970, type: 2}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1490200568}
+      objectReference: {fileID: 1240826633}
     - target: {fileID: 11491122, guid: 455a8082e44b74539a2ffe87d0226970, type: 2}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Select
@@ -1474,7 +1474,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11491122, guid: 455a8082e44b74539a2ffe87d0226970, type: 2}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Bow Tie Ghost
+      value: Scenes/04 Audio Hopscotch
       objectReference: {fileID: 0}
     - target: {fileID: 495170, guid: 455a8082e44b74539a2ffe87d0226970, type: 2}
       propertyPath: m_LocalScale.y

@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 21}
   - component: {fileID: 25}
   - component: {fileID: 24}
+  - component: {fileID: 26}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -411,7 +412,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 7}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d1c475c54620452783c67c34f14f407, type: 3}
   m_Name: 
@@ -658,6 +659,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &26
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 7}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7991fe269d04087af596fc12ada002, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToKillOnTouch:
+  - {fileID: 80746775}
+  - {fileID: 2102019522}
+  - {fileID: 662848108}
+  - {fileID: 210635524}
+  - {fileID: 1775762198}
+  - {fileID: 2122168062}
+  debugText1: {fileID: 1775762200}
+  debugText2: {fileID: 2122168064}
 --- !u!108 &29
 Light:
   m_ObjectHideFlags: 0
