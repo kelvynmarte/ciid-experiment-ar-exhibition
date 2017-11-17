@@ -667,7 +667,7 @@ GameObject:
   - component: {fileID: 684443912}
   m_Layer: 0
   m_Name: Firebase
-  m_TagString: Untagged
+  m_TagString: Firebase
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -683,6 +683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cad6aabf64c74bb98fb00b69b6e1fd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  birdPrefab: {fileID: 4649555755628276, guid: 7f0b6e3896cb44ce7912aabc313372aa, type: 2}
 --- !u!4 &684443913
 Transform:
   m_ObjectHideFlags: 0
@@ -901,6 +902,10 @@ Prefab:
     - target: {fileID: 164190, guid: 14691c451e07ff94cb94be3f44e72ab7, type: 2}
       propertyPath: m_TagString
       value: Frame
+      objectReference: {fileID: 0}
+    - target: {fileID: 164190, guid: 14691c451e07ff94cb94be3f44e72ab7, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 14691c451e07ff94cb94be3f44e72ab7, type: 2}

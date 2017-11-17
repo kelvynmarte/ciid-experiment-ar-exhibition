@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Frame
+  - Firebase
+  - Bird
   layers:
   - Default
   - TransparentFX
