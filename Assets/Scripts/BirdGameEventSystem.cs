@@ -29,7 +29,7 @@ public class BirdGameEventSystem : MonoBehaviour {
 	float shakeDetectionThreshold = 2.0f;
 	float lowPassFilterFactor;
 	Vector3 lowPassValue;
-
+	float lastShakeDetected = 0.0f;
 
 
 	private void Start()
@@ -58,10 +58,11 @@ public class BirdGameEventSystem : MonoBehaviour {
 		lowPassValue = Vector3.Lerp(lowPassValue, acceleration, lowPassFilterFactor);
 		Vector3 deltaAcceleration = acceleration - lowPassValue;
 
-		if (deltaAcceleration.sqrMagnitude >= shakeDetectionThreshold || Input.GetKeyDown("n"))
+		if ((deltaAcceleration.sqrMagnitude >= shakeDetectionThreshold || Input.GetKeyDown("n")) && Time.fixedTime > lastShakeDetected + 1.0f)
 		{
 			databaseManager.CreateNewBird();
 			iOSHapticFeedback.Instance.Trigger((iOSHapticFeedback.iOSFeedbackType)2);
+			lastShakeDetected = Time.fixedTime;
 		}
 	}
 
