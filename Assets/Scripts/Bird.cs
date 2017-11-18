@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Bird : MonoBehaviour {
+	
 	public string uuid;
 	public string name;
 	public bool captured;
@@ -25,3 +26,5 @@ public class Bird : MonoBehaviour {
 		return this.uuid + " " + this.name + " " + this.captured;
 	}
 }
+
+

@@ -6,7 +6,7 @@ using Firebase.Database;
 using Firebase.Unity.Editor;
 
 
-public class BirdsDatabaseManager : MonoBehaviour {
+public class BirdsDatabaseManager : MonoBehaviour, BirdChangedListener {
 
 	Dictionary<string, Bird> allBirds = new Dictionary<string, Bird>();
 
@@ -15,8 +15,13 @@ public class BirdsDatabaseManager : MonoBehaviour {
 	public Transform birdPrefab;
 
 	DatabaseReference reference;
+	private BirdGameEventSystem bridEventSystem;
+	
 	// Use this for initialization
 	void Start () {
+		
+		bridEventSystem = GameObject.FindGameObjectWithTag("Event").GetComponent<BirdGameEventSystem>();
+		
 		// Set up the Editor before calling into the realtime database.
 		FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://ciid-final-project.firebaseio.com/");
 
@@ -103,11 +108,54 @@ public class BirdsDatabaseManager : MonoBehaviour {
 		Debug.Log (changedBird.ToString ());
 		allBirds [changedBird.uuid] = changedBird;
 		if (changedBird.captured == false && freeBirdsIntances.ContainsKey(changedBird.uuid) == false) { // new
-			GameObject instance = Instantiate(birdPrefab, new Vector3(2.0F, 0, 0), Quaternion.identity).gameObject;
+			GameObject instance = Instantiate(birdPrefab, bridEventSystem.GetPositionForNewBird(), Quaternion.identity).gameObject;
+			
+			BirdController bC = instance.GetComponent<BirdController> ();
+			bC.bird = changedBird;
+			bC.AddBirdChangedListener (this);
 			freeBirdsIntances.Add (changedBird.uuid, instance);
+
 		}else if (changedBird.captured == true && freeBirdsIntances.ContainsKey(changedBird.uuid) == true){ // remove instance
 			Destroy (freeBirdsIntances[changedBird.uuid]);
 			freeBirdsIntances.Remove(changedBird.uuid);
 		}
 	}
+
+	public void HandleBirdChanged(object sender, Bird b) {
+		string birdJson = JsonUtility.ToJson(b);
+		Debug.Log(birdJson);
+		
+		reference.Child("birds").Child(b.uuid).SetRawJsonValueAsync(birdJson).ContinueWith(task => {
+			if (task.IsFaulted) {
+				// Handle the error...
+				Debug.Log("Error could not save data");
+
+			}
+			else if (task.IsCompleted) {
+				// Do something with snapshot...
+				Debug.Log("Saved data");
+			}
+		});
+		
+	}
+
+	public void CreateNewBird()
+	{
+		Bird newBird = new Bird ("Seagul");
+
+		string json = JsonUtility.ToJson(newBird);
+		reference.Child("birds").Child(newBird.uuid).SetRawJsonValueAsync(json).ContinueWith(task => {
+			if (task.IsFaulted) {
+				// Handle the error...
+				Debug.Log("Error could not save data");
+
+			}
+			else if (task.IsCompleted) {
+				// Do something with snapshot...
+				Debug.Log("Saved data");
+			}
+		});
+	}
 }
+
+

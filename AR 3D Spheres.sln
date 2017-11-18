@@ -1,9 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AR 3D Spheres", "Assembly-CSharp.csproj", "{50CB45F2-03F4-63F7-41CC-64C661E54B90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{50CB45F2-03F4-63F7-41CC-64C661E54B90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AR 3D Spheres", "Assembly-CSharp-Editor.csproj", "{9D7CA4F4-DC95-3726-9DCB-6EAB40FD1E27}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{9D7CA4F4-DC95-3726-9DCB-6EAB40FD1E27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

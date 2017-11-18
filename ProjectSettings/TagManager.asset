@@ -7,6 +7,7 @@ TagManager:
   - Frame
   - Firebase
   - Bird
+  - Event
   layers:
   - Default
   - TransparentFX

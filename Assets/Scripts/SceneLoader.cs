@@ -14,7 +14,7 @@ public class SceneLoader : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.touchCount >= 4) {
+		if (Input.touchCount >= 5) {
 			Debug.Log ("Load Menu");
 			if (!LoadMenu) {
 				LoadMenu = true;

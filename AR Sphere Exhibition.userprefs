@@ -1,24 +1,22 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/AudioJamPlayer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CustomMathHelper.cs">
     <Files>
-      <File FileName="Assets/SceneLoader.cs" Line="35" Column="1" />
-      <File FileName="Assets/SwipeMenu/Scripts/Demo Scripts/DemoSceneSwitcher.cs" Line="2" Column="34" />
-      <File FileName="Assets/SwipeMenu/Scripts/Demo Scripts/ExampleCharacterSelector.cs" Line="14" Column="18" />
-      <File FileName="Assets/RangeHapticFeedback.cs" Line="32" Column="4" />
-      <File FileName="Assets/SwipeMenu/Scripts/SwipeMenu/Menu.cs" Line="357" Column="84" />
-      <File FileName="Assets/SwipeMenu/Scripts/SwipeMenu/MenuItem.cs" Line="3" Column="19" />
-      <File FileName="Assets/SwipeMenu/Scripts/SwipeMenu/SubMenuItem.cs" Line="1" Column="1" />
-      <File FileName="Assets/SwipeMenu/Scripts/SwipeMenu/Helper.cs" Line="1" Column="1" />
-      <File FileName="Assets/SwipeMenu/Scripts/SwipeMenu/Input/SwipeHandler.cs" Line="32" Column="36" />
-      <File FileName="Assets/AudioJamTrigger.cs" Line="18" Column="3" />
+      <File FileName="Assets/Scripts/BirdGameEventSystem.cs" Line="1" Column="1" />
+      <File FileName="Assets/SwipeMenu/Scripts/SwipeMenu/Input/SwipeHandler.cs" Line="1" Column="1" />
       <File FileName="Assets/SwipeMenu/Scripts/SwipeMenu/Input/TouchHandler.cs" Line="1" Column="1" />
-      <File FileName="Assets/AudioJamPlayer.cs" Line="15" Column="2" />
       <File FileName="Assets/SwipeMenu/Scripts/Demo Scripts/MoveBetweenMenus.cs" Line="1" Column="1" />
       <File FileName="Assets/SwipeMenu/Scripts/Demo Scripts/ShowTextOnMenuCentred.cs" Line="1" Column="1" />
-      <File FileName="Assets/SwipeMenu/Scripts/Demo Scripts/UpdateMenuItemOnClick.cs" Line="24" Column="45" />
+      <File FileName="Assets/SwipeMenu/Scripts/Demo Scripts/UpdateMenuItemOnClick.cs" Line="1" Column="1" />
       <File FileName="Assets/SwipeMenu/Scripts/Demo Scripts/SwipeMenuAudioPlayer.cs" Line="1" Column="1" />
-      <File FileName="Assets/SwipeMenu/Scripts/Demo Scripts/UpdateTextColourOnMenuClick.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Bird.cs" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/Utility/ParticleSystemDestroyer.cs" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/Utility/SimpleActivatorMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/Utility/WaypointProgressTracker.cs" Line="1" Column="1" />
+      <File FileName="Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARUtility.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/RangeHapticFeedback.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/SceneLoader.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CustomMathHelper.cs" Line="10" Column="12" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

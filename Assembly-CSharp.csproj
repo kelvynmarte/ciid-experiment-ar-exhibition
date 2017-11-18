@@ -1,16 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{D5925D95-FB0A-CDBD-87B8-7E7562568BA8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>Assets</BaseDirectory>
   </PropertyGroup>
@@ -34,7 +38,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.XML" />
+    <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
@@ -46,162 +50,168 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\BirdController.cs" />
-     <Compile Include="Assets\BirdsDatabaseManager.cs" />
-     <Compile Include="Assets\Scripts\AudioHopscotchPlayer.cs" />
-     <Compile Include="Assets\Scripts\AudioJamPlayer.cs" />
-     <Compile Include="Assets\Scripts\AudioJamTrigger.cs" />
-     <Compile Include="Assets\Scripts\Bird.cs" />
-     <Compile Include="Assets\Scripts\LoadMovieFeedbackControl.cs" />
-     <Compile Include="Assets\Scripts\RangeHapticFeedback.cs" />
-     <Compile Include="Assets\Scripts\SceneLoader.cs" />
-     <Compile Include="Assets\Scripts\SoundSphereControl.cs" />
-     <Compile Include="Assets\SwipeMenu\Scripts\Demo Scripts\DemoSceneSwitcher.cs" />
-     <Compile Include="Assets\SwipeMenu\Scripts\Demo Scripts\ExampleCharacterSelector.cs" />
-     <Compile Include="Assets\SwipeMenu\Scripts\Demo Scripts\ExampleMenuAudioPlayer.cs" />
-     <Compile Include="Assets\SwipeMenu\Scripts\Demo Scripts\MoveBetweenMenus.cs" />
-     <Compile Include="Assets\SwipeMenu\Scripts\Demo Scripts\ShowTextOnMenuCentred.cs" />
-     <Compile Include="Assets\SwipeMenu\Scripts\Demo Scripts\SwipeMenuAudioPlayer.cs" />
-     <Compile Include="Assets\SwipeMenu\Scripts\Demo Scripts\UpdateMenuItemOnClick.cs" />
-     <Compile Include="Assets\SwipeMenu\Scripts\Demo Scripts\UpdateTextColourOnMenuClick.cs" />
-     <Compile Include="Assets\SwipeMenu\Scripts\SwipeMenu\Helper.cs" />
-     <Compile Include="Assets\SwipeMenu\Scripts\SwipeMenu\Input\SwipeHandler.cs" />
-     <Compile Include="Assets\SwipeMenu\Scripts\SwipeMenu\Input\TouchHandler.cs" />
-     <Compile Include="Assets\SwipeMenu\Scripts\SwipeMenu\Menu.cs" />
-     <Compile Include="Assets\SwipeMenu\Scripts\SwipeMenu\MenuItem.cs" />
-     <Compile Include="Assets\SwipeMenu\Scripts\SwipeMenu\SubMenuItem.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ARKitRemoteConnection.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ConnectToEditor.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ConnectionMessageIds.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\EditorHitTest.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ObjectSerializationExtension.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\SerializableObjects.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\UnityRemoteVideo.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Examples\AddRemoveAnchorExample\UnityARUserAnchorExample.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Examples\FocusSquare\FocusSquare.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityARBallz\BallMaker.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityARBallz\BallMover.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityARBallz\Ballz.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityARBallz\ModeSwitcher.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\Enums\ColorValues.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\Events\ColorChangedEvent.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\Events\HSVChangedEvent.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\Other\ColorPickerTester.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\Other\TiltWindow.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\UI\ColorImage.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\UI\ColorLabel.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\UI\ColorPicker.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\UI\ColorPresets.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\UI\ColorSlider.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\UI\ColorSliderImage.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\UI\HexColorField.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\UI\SVBoxSlider.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\UtilityScripts\BoxSlider.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\UtilityScripts\HSVUtil.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\ParticlePainter.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\AR3DOFCameraManager.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\ARPlaneAnchorGameObject.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\DontDestroyOnLoad.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\PointCloudParticleExample.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARAmbient.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARAnchorManager.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARCameraManager.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARCameraNearFar.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARGeneratePlane.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARHitTestExample.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARKitControl.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARMatrixOps.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARUserAnchorComponent.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARUtility.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARVideo.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityPointCloudExample.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARAnchor.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARCamera.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARErrorCode.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARFrame.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARHitTestResult.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARHitTestResultType.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARLightEstimate.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARPlaneAnchor.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARPlaneAnchorAlignment.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARPoint.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARRect.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARSize.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARTextureHandles.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARTrackingQuality.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARTrackingState.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARTrackingStateReason.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARUserAnchor.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\UnityARSessionNativeInterface.cs" />
-     <None Include="Assets\SwipeMenu\Documentation\Version History.txt" />
-     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml" />
-     <None Include="Assets\Firebase\Plugins\link.xml" />
-     <None Include="Assets\Plugins\Android\Firebase\AndroidManifest.xml" />
-     <None Include="Assets\Firebase\Editor\AppDependencies.xml" />
-     <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\MobileOcclusion.shader" />
-     <None Include="Assets\SwipeMenu\Documentation\Read Me First!.txt" />
-     <None Include="Assets\Firebase\Editor\AuthDependencies.xml" />
-     <None Include="Assets\Firebase\Editor\FirebaseAuth_v4.2.1_manifest.txt" />
-     <None Include="Assets\UnityARKitPlugin\ARKitRemote\ARKITREMOTE.txt" />
-     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-     <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
-     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
-     <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\MobileARShadow.shader" />
-     <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\InstancedSurfaceShader.shader" />
-     <None Include="Assets\TUTORIAL.txt" />
-     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
-     <None Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Shaders\YUVShader.shader" />
-     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
-     <None Include="Assets\Firebase\Plugins\Http\link.xml" />
-     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
-     <None Include="Assets\Firebase\Editor\FirebaseDatabase_v4.2.1_manifest.txt" />
-     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.59.0.txt" />
- <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Networking">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TestRunner">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
- </Reference>
- <Reference Include="nunit.framework">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.HoloLens">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.VR">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
- </Reference>
- <Reference Include="Firebase.App">
- <HintPath>/Users/kelvyn/Projects/2017_08 CIID Final Project/05 Production/Unity/AR Sphere Exhibition/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
- </Reference>
- <Reference Include="Firebase.Auth">
- <HintPath>/Users/kelvyn/Projects/2017_08 CIID Final Project/05 Production/Unity/AR Sphere Exhibition/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
- </Reference>
- <Reference Include="Firebase.Database">
- <HintPath>/Users/kelvyn/Projects/2017_08 CIID Final Project/05 Production/Unity/AR Sphere Exhibition/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
- </Reference>
- <Reference Include="Google.MiniJson">
- <HintPath>/Users/kelvyn/Projects/2017_08 CIID Final Project/05 Production/Unity/AR Sphere Exhibition/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
- </Reference>
- <Reference Include="Google.Sharpen">
- <HintPath>/Users/kelvyn/Projects/2017_08 CIID Final Project/05 Production/Unity/AR Sphere Exhibition/Assets/Firebase/Plugins/Google.Sharpen.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Compat">
- <HintPath>/Users/kelvyn/Projects/2017_08 CIID Final Project/05 Production/Unity/AR Sphere Exhibition/Assets/Parse/Plugins/Unity.Compat.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Tasks">
- <HintPath>/Users/kelvyn/Projects/2017_08 CIID Final Project/05 Production/Unity/AR Sphere Exhibition/Assets/Parse/Plugins/Unity.Tasks.dll</HintPath>
- </Reference>
+    <Compile Include="Assets\Scripts\AudioHopscotchPlayer.cs" />
+    <Compile Include="Assets\Scripts\AudioJamPlayer.cs" />
+    <Compile Include="Assets\Scripts\AudioJamTrigger.cs" />
+    <Compile Include="Assets\Scripts\Bird.cs" />
+    <Compile Include="Assets\Scripts\BirdController.cs" />
+    <Compile Include="Assets\Scripts\BirdGameEventSystem.cs" />
+    <Compile Include="Assets\Scripts\BirdPlayer.cs" />
+    <Compile Include="Assets\Scripts\BirdsDatabaseManager.cs" />
+    <Compile Include="Assets\Scripts\CustomMathHelper.cs" />
+    <Compile Include="Assets\Scripts\LoadMovieFeedbackControl.cs" />
+    <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Scripts\RangeHapticFeedback.cs" />
+    <Compile Include="Assets\Scripts\SceneLoader.cs" />
+    <Compile Include="Assets\Scripts\SoundSphereControl.cs" />
+    <Compile Include="Assets\SwipeMenu\Scripts\Demo Scripts\DemoSceneSwitcher.cs" />
+    <Compile Include="Assets\SwipeMenu\Scripts\Demo Scripts\ExampleCharacterSelector.cs" />
+    <Compile Include="Assets\SwipeMenu\Scripts\Demo Scripts\ExampleMenuAudioPlayer.cs" />
+    <Compile Include="Assets\SwipeMenu\Scripts\Demo Scripts\MoveBetweenMenus.cs" />
+    <Compile Include="Assets\SwipeMenu\Scripts\Demo Scripts\ShowTextOnMenuCentred.cs" />
+    <Compile Include="Assets\SwipeMenu\Scripts\Demo Scripts\SwipeMenuAudioPlayer.cs" />
+    <Compile Include="Assets\SwipeMenu\Scripts\Demo Scripts\UpdateMenuItemOnClick.cs" />
+    <Compile Include="Assets\SwipeMenu\Scripts\Demo Scripts\UpdateTextColourOnMenuClick.cs" />
+    <Compile Include="Assets\SwipeMenu\Scripts\SwipeMenu\Helper.cs" />
+    <Compile Include="Assets\SwipeMenu\Scripts\SwipeMenu\Input\SwipeHandler.cs" />
+    <Compile Include="Assets\SwipeMenu\Scripts\SwipeMenu\Input\TouchHandler.cs" />
+    <Compile Include="Assets\SwipeMenu\Scripts\SwipeMenu\Menu.cs" />
+    <Compile Include="Assets\SwipeMenu\Scripts\SwipeMenu\MenuItem.cs" />
+    <Compile Include="Assets\SwipeMenu\Scripts\SwipeMenu\SubMenuItem.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ARKitRemoteConnection.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ConnectToEditor.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ConnectionMessageIds.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\EditorHitTest.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ObjectSerializationExtension.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\SerializableObjects.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\UnityRemoteVideo.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Examples\AddRemoveAnchorExample\UnityARUserAnchorExample.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Examples\FocusSquare\FocusSquare.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Examples\UnityARBallz\BallMaker.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Examples\UnityARBallz\BallMover.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Examples\UnityARBallz\Ballz.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Examples\UnityARBallz\ModeSwitcher.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\Enums\ColorValues.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\Events\ColorChangedEvent.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\Events\HSVChangedEvent.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\Other\ColorPickerTester.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\Other\TiltWindow.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\UI\ColorImage.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\UI\ColorLabel.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\UI\ColorPicker.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\UI\ColorPresets.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\UI\ColorSlider.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\UI\ColorSliderImage.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\UI\HexColorField.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\UI\SVBoxSlider.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\UtilityScripts\BoxSlider.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\UtilityScripts\HSVUtil.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\ParticlePainter.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\AR3DOFCameraManager.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\ARPlaneAnchorGameObject.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\DontDestroyOnLoad.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\PointCloudParticleExample.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARAmbient.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARAnchorManager.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARCameraManager.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARCameraNearFar.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARGeneratePlane.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARHitTestExample.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARKitControl.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARMatrixOps.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARUserAnchorComponent.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARUtility.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARVideo.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityPointCloudExample.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARAnchor.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARCamera.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARErrorCode.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARFrame.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARHitTestResult.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARHitTestResultType.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARLightEstimate.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARPlaneAnchor.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARPlaneAnchorAlignment.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARPoint.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARRect.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARSize.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARTextureHandles.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARTrackingQuality.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARTrackingState.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARTrackingStateReason.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARUserAnchor.cs" />
+    <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\UnityARSessionNativeInterface.cs" />
+    <None Include="Assets\SwipeMenu\Documentation\Version History.txt" />
+    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml" />
+    <None Include="Assets\Firebase\Plugins\link.xml" />
+    <None Include="Assets\Plugins\Android\Firebase\AndroidManifest.xml" />
+    <None Include="Assets\Firebase\Editor\AppDependencies.xml" />
+    <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\MobileOcclusion.shader" />
+    <None Include="Assets\SwipeMenu\Documentation\Read Me First!.txt" />
+    <None Include="Assets\Firebase\Editor\AuthDependencies.xml" />
+    <None Include="Assets\Firebase\Editor\FirebaseAuth_v4.2.1_manifest.txt" />
+    <None Include="Assets\UnityARKitPlugin\ARKitRemote\ARKITREMOTE.txt" />
+    <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
+    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
+    <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\MobileARShadow.shader" />
+    <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\InstancedSurfaceShader.shader" />
+    <None Include="Assets\TUTORIAL.txt" />
+    <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+    <None Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Shaders\YUVShader.shader" />
+    <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+    <None Include="Assets\Firebase\Plugins\Http\link.xml" />
+    <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
+    <None Include="Assets\Firebase\Editor\FirebaseDatabase_v4.2.1_manifest.txt" />
+    <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.59.0.txt" />
+    <Reference Include="UnityEngine.UI">
+      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VR">
+      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.App">
+      <HintPath>/Users/kelvyn/Projects/2017_08 CIID Final Project/05 Production/Unity/AR Sphere Exhibition/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Auth">
+      <HintPath>/Users/kelvyn/Projects/2017_08 CIID Final Project/05 Production/Unity/AR Sphere Exhibition/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Database">
+      <HintPath>/Users/kelvyn/Projects/2017_08 CIID Final Project/05 Production/Unity/AR Sphere Exhibition/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.MiniJson">
+      <HintPath>/Users/kelvyn/Projects/2017_08 CIID Final Project/05 Production/Unity/AR Sphere Exhibition/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Sharpen">
+      <HintPath>/Users/kelvyn/Projects/2017_08 CIID Final Project/05 Production/Unity/AR Sphere Exhibition/Assets/Firebase/Plugins/Google.Sharpen.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Compat">
+      <HintPath>/Users/kelvyn/Projects/2017_08 CIID Final Project/05 Production/Unity/AR Sphere Exhibition/Assets/Parse/Plugins/Unity.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Tasks">
+      <HintPath>/Users/kelvyn/Projects/2017_08 CIID Final Project/05 Production/Unity/AR Sphere Exhibition/Assets/Parse/Plugins/Unity.Tasks.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{5692495A-3FC0-72A4-3007-3EBDB8252063}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{5692495A-3FC0-72A4-3007-3EBDB8252063}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -211,5 +221,14 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  
+  <ItemGroup>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>
